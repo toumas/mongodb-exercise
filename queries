@@ -1,0 +1,13 @@
+// Who released album titled 'Found in Far Away Places'
+db.band.find(
+  {
+    "releases": { $in: [ObjectId("58e8e305d03bc8390d92291d")]}
+  }
+);
+
+// Songs titled Dark Horse
+db.getCollection('song').find(
+  {"title": "Dark Horse"}
+);
+
+// Songs from release titled Get What You Give
