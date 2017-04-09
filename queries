@@ -1,13 +1,53 @@
-// Who released album titled 'Found in Far Away Places'
-db.band.find(
-  {
-    "releases": { $in: [ObjectId("58e8e305d03bc8390d92291d")]}
-  }
-);
+/*Mitä levyjä, yhtyeitä/sooloartisteja ja muusikoita (ts. yhtyeiden jäseniä) kokoelmasta löytyy?*/
+db.release.find({}, {_id: 0, title: 1});
 
-// Songs titled Dark Horse
-db.getCollection('song').find(
-  {"title": "Dark Horse"}
-);
+db.band.find({}, {_id: 0, name: 1});
 
-// Songs from release titled Get What You Give
+db.musician.find({}, {_id: 0, fname: 1, lname: 1});
+
+/*Mitä levyjä tietyltä yhtyeeltä löytyy?*/
+var band = db.band.findOne({"name": "August Burns Red"});
+
+db.release.find({"band_id": band._id}, {_id: 0, title: 1});
+
+/*Millä levyillä tietty muusikko on soittanut ja mitä instrumenttia?*/
+
+
+/*Missä yhtyeissä tietty muusikko on soittanut? (Tämä siis tietenkin käyttäjän CD-kokoelman näkökulmasta – Wikipedia erikseen...)*/
+
+
+/*Millä levyillä tietty laulu on? (Voi olla esim. eri yhtyeiden esittämänä tai saman yhtyeen erilevyillä.)*/
+
+
+/*Levyjä pitää voida lajitella genren, julkaisuajan ja käyttäjän lisäämien tägien mukaan.*/
+
+
+/*Käyttäjä antaa meille genrelistan; tässä kohdassa käytetään jotain korkean tason yleistä genrelistaa à hakekaa sopiva netistä…*/
+
+
+/*Yksittäisiä lauluja pitää myös voida lajitella genren, julkaisuajan ja käyttäjän lisäämien tägien mukaan.*/
+
+
+/*Lisäksi käyttäjä haluaa voida lisätä sekä lauluihin että levyihin tähtiarvioita (1-5 tähteä) ja lajitella niitä näiden mukaan.*/
+
+
+
+/* SAVED */
+db.band.aggregate(
+    [
+        {
+            $lookup: {
+               from: "release",
+               localField: "releases",
+               foreignField: "_id",
+               as: "releaseInfo"
+            }
+        },
+        {
+            $group: {
+                "_id": { "Band": "$name" },
+                "Releases": { $push: "$releaseInfo.title"}
+            }
+        }
+    ]
+);
