@@ -11,7 +11,16 @@ var band = db.band.findOne({"name": "August Burns Red"});
 db.release.find({"band_id": band._id}, {_id: 0, title: 1});
 
 /*Millä levyillä tietty muusikko on soittanut ja mitä instrumenttia?*/
+var musician = db.musician.findOne({"fname": "Tyler", "lname": "Carter"});
 
+db.release.find(
+    {
+        "musicians":  {
+            $elemMatch: { "musician_id": musician._id }
+        }
+    },
+    { _id: 0, title: 1, "musicians.$": 1}
+);
 
 /*Missä yhtyeissä tietty muusikko on soittanut? (Tämä siis tietenkin käyttäjän CD-kokoelman näkökulmasta – Wikipedia erikseen...)*/
 
@@ -51,3 +60,4 @@ db.band.aggregate(
         }
     ]
 );
+

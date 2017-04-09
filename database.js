@@ -128,7 +128,7 @@ db.band.insertMany([
   {
     "_id": issues,
     "name": "Issues",
-    "members": [TylerCarter, MichaelBohn, AdrianRebollo, SkylerAcord, JoshManuel, TylerAcord],
+    "members": [TylerAcord, MichaelBohn, AdrianRebollo, SkylerAcord, JoshManuel, TylerCarter],
     "releases": [headspace]
   },
   {
@@ -874,6 +874,13 @@ db.release.insertMany([
       "genres": ["metalcore"],
       "tags": ["christian"],
       "stars": 5,
+      "musicians": [
+        { "musician_id": jakeLuhrs, "instruments": ["vocals"] },
+        { "musician_id": johnBenjaminBrubaker, "instruments": ["guitar"] },
+        { "musician_id": brentRambler, "instruments": ["guitar"] },
+        { "musician_id": dustinDavidson, "instruments": ["bass", "vocals"] },
+        { "musician_id": mattGreiner, "instruments": ["drums"] }
+      ],
       "band_id": augustBurnsRed
     },
     {
@@ -883,6 +890,13 @@ db.release.insertMany([
       "genres": ["metalcore"],
       "tags": ["melodic"],
       "stars": 4,
+      "musicians": [
+        { "musician_id": JonathanVigil, "instruments": ["vocals"] },
+        { "musician_id": AaronBrooks, "instruments": ["guitar", "vocals"] },
+        { "musician_id": JimRiley, "instruments": ["bass"] },
+        { "musician_id": ZackJohnson, "instruments": ["guitar"] },
+        { "musician_id": AndrewTkaczyk, "instruments": ["drums"] }
+      ],
       "band_id": theGhostInside
     },
     {
@@ -892,6 +906,7 @@ db.release.insertMany([
       "genres": ["pop"],
       "tags": ["trap"],
       "stars": 3,
+      "musicians": [{ "musician_id": katyPerry, "instruments": ["vocals"] }],
       "band_id": katyPerry
     },
     {
@@ -901,6 +916,13 @@ db.release.insertMany([
       "genres": ["metalcore"],
       "tags": ["christian"],
       "stars": 5,
+      "musicians": [
+        { "musician_id": jakeLuhrs, "instruments": ["vocals"] },
+        { "musician_id": johnBenjaminBrubaker, "instruments": ["guitar"] },
+        { "musician_id": brentRambler, "instruments": ["guitar"] },
+        { "musician_id": dustinDavidson, "instruments": ["bass", "vocals"] },
+        { "musician_id": mattGreiner, "instruments": ["drums"] }
+      ],
       "band_id": augustBurnsRed
     },
     {
@@ -910,6 +932,14 @@ db.release.insertMany([
       "genres": ["metalcore"],
       "tags": ["nu metal"],
       "stars": 4,
+      "musicians": [
+        { "musician_id": TylerCarter, "instruments": ["vocals"] },
+        { "musician_id": MichaelBohn, "instruments": ["vocals"] },
+        { "musician_id": AdrianRebollo, "instruments": ["guitar"] },
+        { "musician_id": SkylerAcord, "instruments": ["bass"] },
+        { "musician_id": JoshManuel, "instruments": ["drums"] },
+        { "musician_id": TylerAcord, "instruments": ["turntable", "keyboard", "synthesizer"] }
+      ],
       "band_id": issues
     },
     {
@@ -919,6 +949,7 @@ db.release.insertMany([
       "genres": ["R&B"],
       "tags": ["Solo EP"],
       "stars": 3,
+      "musicians": [{ "musician_id": TylerCarter, "instruments": ["vocals"] }],
       "band_id": tylerCarter
     }
   ]
