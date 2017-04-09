@@ -23,10 +23,20 @@ db.release.find(
 );
 
 /*Missä yhtyeissä tietty muusikko on soittanut? (Tämä siis tietenkin käyttäjän CD-kokoelman näkökulmasta – Wikipedia erikseen...)*/
-
+db.band.find(
+    { "members": { $in: [musician._id] } },
+    { _id: 0, name: 1}
+);
 
 /*Millä levyillä tietty laulu on? (Voi olla esim. eri yhtyeiden esittämänä tai saman yhtyeen erilevyillä.)*/
-
+db.release.find(
+    {
+        "tracks": { 
+            $elemMatch: { "title": "Dark Horse" }
+        }
+    },
+    { _id: 0, title: 1 }
+);
 
 /*Levyjä pitää voida lajitella genren, julkaisuajan ja käyttäjän lisäämien tägien mukaan.*/
 
