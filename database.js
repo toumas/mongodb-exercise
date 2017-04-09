@@ -272,599 +272,6 @@ db.musician.insertMany([
   }
 ]);
 
-db.song.insertMany([
-  // FIFAP
-  {
-    "_id": TheWake,
-    "title": "The Wake",
-    "released": new Date("2015-06-30"),
-    "genres": ["metalcore"],
-    "tags": ["favorite"],
-    "stars": 5,
-    "releaseId": foundInFarAwayPlaces
-  },
-  {
-    "_id": Martyr,
-    "title": "Martyr",
-    "released": new Date("2015-06-30"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 5,
-    "releaseId": foundInFarAwayPlaces
-  },
-  {
-    "_id": Identity,
-    "title": "Identity",
-    "released": new Date("2015-06-30"),
-    "genres": ["metalcore"],
-    "tags": ["favorite"],
-    "stars": 5,
-    "releaseId": foundInFarAwayPlaces
-  },
-  {
-    "_id": SeparatingTheSeas,
-    "title": "Separating the Seas",
-    "released": new Date("2015-06-30"),
-    "genres": ["metalcore"],
-    "tags": ["favorite"],
-    "stars": 5,
-    "releaseId": foundInFarAwayPlaces
-  },
-  {
-    "_id": Ghosts,
-    "title": "Ghosts",
-    "released": new Date("2015-06-30"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 5,
-    "releaseId": foundInFarAwayPlaces
-  },
-  {
-    "_id": MajoringInTheMinors,
-    "title": "Majoring in the Minors",
-    "released": new Date("2015-06-30"),
-    "genres": ["metalcore"],
-    "tags": ["favorite"],
-    "stars": 5,
-    "releaseId": foundInFarAwayPlaces
-  },
-  {
-    "_id": EverlastingEnding,
-    "title": "Everlasting Ending",
-    "released": new Date("2015-06-30"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 5,
-    "releaseId": foundInFarAwayPlaces
-  },
-  {
-    "_id": BrokenPromises,
-    "title": "Broken Promises",
-    "released": new Date("2015-06-30"),
-    "genres": ["metalcore"],
-    "tags": ["favorite"],
-    "stars": 5,
-    "releaseId": foundInFarAwayPlaces
-  },
-  {
-    "_id": Blackwood,
-    "title": "Blackwood",
-    "released": new Date("2015-06-30"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 5,
-    "releaseId": foundInFarAwayPlaces
-  },
-  {
-    "_id": TwentyOneGrams,
-    "title": "Twenty-One Grams",
-    "released": new Date("2015-06-30"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 5,
-    "releaseId": foundInFarAwayPlaces
-  },
-  {
-    "_id": Vanguard,
-    "title": "Vanguard",
-    "released": new Date("2015-06-30"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 5,
-    "releaseId": foundInFarAwayPlaces
-  },
-  // GWYG
-  {
-    "_id": ThisIsWhatIKnowAboutSacrifice,
-    "title": "This Is What I Know About Sacrifice",
-    "released": new Date("2012-06-19"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 4,
-    "releaseId": getWhatYouGive
-  },
-  {
-    "_id": Outlive,
-    "title": "Outlive",
-    "released": new Date("2012-06-19"),
-    "genres": ["metalcore"],
-    "tags": ["favorite"],
-    "stars": 4,
-    "releaseId": getWhatYouGive
-  },
-  {
-    "_id": Engine45,
-    "title": "Engine 45",
-    "released": new Date("2012-06-19"),
-    "genres": ["metalcore"],
-    "tags": ["favorite"],
-    "stars": 4,
-    "releaseId": getWhatYouGive
-  },
-  {
-    "_id": SlippingAway,
-    "title": "Slipping Away",
-    "released": new Date("2012-06-19"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 4,
-    "releaseId": getWhatYouGive
-  },
-  {
-    "_id": TheGreatUnknown,
-    "title": "The Great Unknown",
-    "released": new Date("2012-06-19"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 4,
-    "releaseId": getWhatYouGive
-  },
-  {
-    "_id": DarkHorse,
-    "title": "Dark Horse",
-    "released": new Date("2012-06-19"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 4,
-    "releaseId": getWhatYouGive
-  },
-  {
-    "_id": WhiteLight,
-    "title": "White Light",
-    "released": new Date("2012-06-19"),
-    "genres": ["metalcore"],
-    "tags": ["favorite"],
-    "stars": 4,
-    "releaseId": getWhatYouGive
-  },
-  {
-    "_id": ThirtyThree,
-    "title": "Thirty Three",
-    "released": new Date("2012-06-19"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 4,
-    "releaseId": getWhatYouGive
-  },
-  {
-    "_id": FaceValue,
-    "title": "Face Value",
-    "released": new Date("2012-06-19"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 4,
-    "releaseId": getWhatYouGive
-  },
-  {
-    "_id": Deceiver,
-    "title": "Deceiver",
-    "released": new Date("2012-06-19"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 4,
-    "releaseId": getWhatYouGive
-  },
-  {
-    "_id": TestTheLimits,
-    "title": "Test the Limits",
-    "released": new Date("2012-06-19"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 4,
-    "releaseId": getWhatYouGive
-  },
-  // Prism
-  {
-    "_id": Roar,
-    "title": "Roar",
-    "released": new Date("2013-08-18"),
-    "genres": ["pop"],
-    "tags": ["favorite"],
-    "stars": 3,
-    "releaseId": prism
-  },
-  {
-    "_id": LegendaryLovers,
-    "title": "Legendary Lovers",
-    "released": new Date("2013-08-18"),
-    "genres": ["pop"],
-    "tags": [],
-    "stars": 3,
-    "releaseId": prism
-  },
-  {
-    "_id": Birthday,
-    "title": "Birthday",
-    "released": new Date("2013-08-18"),
-    "genres": ["disco"],
-    "tags": [],
-    "stars": 3,
-    "releaseId": prism
-  },
-  {
-    "_id": WalkingOnAir,
-    "title": "Walking on Air",
-    "released": new Date("2013-08-18"),
-    "genres": ["deep house"],
-    "tags": [],
-    "stars": 3,
-    "releaseId": prism
-  },
-  {
-    "_id": Unconditionally,
-    "title": "Unconditionally",
-    "released": new Date("2013-08-18"),
-    "genres": ["pop rock"],
-    "tags": [],
-    "stars": 3,
-    "releaseId": prism
-  },
-  {
-    "_id": DarkHorseKP,
-    "title": "Dark Horse",
-    "released": new Date("2013-08-18"),
-    "genres": ["trap", "hip hop"],
-    "tags": ["favorite"],
-    "stars": 3,
-    "releaseId": prism
-  },
-  {
-    "_id": ThisIsHowWeDo,
-    "title": "This Is How We Do",
-    "released": new Date("2013-08-18"),
-    "genres": ["pop", "dance"],
-    "tags": [],
-    "stars": 3,
-    "releaseId": prism
-  },
-  {
-    "_id": InternationalSmile,
-    "title": "International Smile",
-    "released": new Date("2013-08-18"),
-    "genres": ["pop"],
-    "tags": [],
-    "stars": 3,
-    "releaseId": prism
-  },
-  {
-    "_id": Ghost,
-    "title": "Ghost",
-    "released": new Date("2013-08-18"),
-    "genres": ["pop"],
-    "tags": [],
-    "stars": 3,
-    "releaseId": prism
-  },
-  {
-    "_id": LoveMe,
-    "title": "Love Me",
-    "released": new Date("2013-08-18"),
-    "genres": ["pop"],
-    "tags": [],
-    "stars": 3,
-    "releaseId": prism
-  },
-  {
-    "_id": ThisMoment,
-    "title": "This Moment",
-    "released": new Date("2013-08-18"),
-    "genres": ["pop"],
-    "tags": [],
-    "stars": 3,
-    "releaseId": prism
-  },
-  {
-    "_id": DoubleRainbow,
-    "title": "Double Rainbow",
-    "released": new Date("2013-08-18"),
-    "genres": ["pop"],
-    "tags": [],
-    "stars": 3,
-    "releaseId": prism
-  },
-  {
-    "_id": ByTheGraceOfGod,
-    "title": "By the Grace of God",
-    "released": new Date("2013-08-18"),
-    "genres": ["pop", "christian"],
-    "tags": [],
-    "stars": 3,
-    "releaseId": prism
-  },
-  // R&R
-  {
-    "_id": Provision,
-    "title": "Title",
-    "released": new Date("2013-06-25"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 5,
-    "releaseId": rescueAndRestore
-  },
-  {
-    "_id": Treatment,
-    "title": "Title",
-    "released": new Date("2013-06-25"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 5,
-    "releaseId": rescueAndRestore
-  },
-  {
-    "_id": SpiritBreaker,
-    "title": "Title",
-    "released": new Date("2013-06-25"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 5,
-    "releaseId": rescueAndRestore
-  },
-  {
-    "_id": CountItAllAsLost,
-    "title": "Title",
-    "released": new Date("2013-06-25"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 5,
-    "releaseId": rescueAndRestore
-  },
-  {
-    "_id": Sincerity,
-    "title": "Title",
-    "released": new Date("2013-06-25"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 5,
-    "releaseId": rescueAndRestore
-  },
-  {
-    "_id": CreativeCaptivity,
-    "title": "Title",
-    "released": new Date("2013-06-25"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 5,
-    "releaseId": rescueAndRestore
-  },
-  {
-    "_id": FaultLine,
-    "title": "Title",
-    "released": new Date("2013-06-25"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 5,
-    "releaseId": rescueAndRestore
-  },
-  {
-    "_id": BeautyInTragedy,
-    "title": "Title",
-    "released": new Date("2013-06-25"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 5,
-    "releaseId": rescueAndRestore
-  },
-  {
-    "_id": Animals,
-    "title": "Title",
-    "released": new Date("2013-06-25"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 5,
-    "releaseId": rescueAndRestore
-  },
-  {
-    "_id": Echoes,
-    "title": "Title",
-    "released": new Date("2013-06-25"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 5,
-    "releaseId": rescueAndRestore
-  },
-  {
-    "_id": TheFirstStep,
-    "title": "Title",
-    "released": new Date("2013-06-25"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 5,
-    "releaseId": rescueAndRestore
-  },
-  // Headspace
-  {
-    "_id": TheRealest,
-    "title": "The Realest",
-    "released": new Date("2016-05-20"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 4,
-    "releaseId": headspace
-  },
-  {
-    "_id": HomeSoon,
-    "title": "Home Soon",
-    "released": new Date("2016-05-20"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 4,
-    "releaseId": headspace
-  },
-  {
-    "_id": LostAndFound,
-    "title": "Lost-n-Found (On a Roll)",
-    "released": new Date("2016-05-20"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 4,
-    "releaseId": headspace
-  },
-  {
-    "_id": YungAndDum,
-    "title": "Yung & Dum",
-    "released": new Date("2016-05-20"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 4,
-    "releaseId": headspace
-  },
-  {
-    "_id": MadeToLast,
-    "title": "Made to Last",
-    "released": new Date("2016-05-20"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 4,
-    "releaseId": headspace
-  },
-  {
-    "_id": Flojo,
-    "title": "Flojo",
-    "released": new Date("2016-05-20"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 4,
-    "releaseId": headspace
-  },
-  {
-    "_id": Hero,
-    "title": "Hero",
-    "released": new Date("2016-05-20"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 4,
-    "releaseId": headspace
-  },
-  {
-    "_id": Coma,
-    "title": "COMA",
-    "released": new Date("2016-05-20"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 4,
-    "releaseId": headspace
-  },
-  {
-    "_id": RankRider,
-    "title": "Rank Rider",
-    "released": new Date("2016-05-20"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 4,
-    "releaseId": headspace
-  },
-  {
-    "_id": BlueWall,
-    "title": "Blue Wall",
-    "released": new Date("2016-05-20"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 4,
-    "releaseId": headspace
-  },
-  {
-    "_id": SomeoneWhoDoes,
-    "title": "Someone Who Does",
-    "released": new Date("2016-05-20"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 4,
-    "releaseId": headspace
-  },
-  {
-    "_id": IAlwaysKnew,
-    "title": "I Always Knew",
-    "released": new Date("2016-05-20"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 4,
-    "releaseId": headspace
-  },
-  {
-    "_id": SlowMeDown,
-    "title": "Slow Me Down",
-    "released": new Date("2016-05-20"),
-    "genres": ["metalcore"],
-    "tags": [],
-    "stars": 4,
-    "releaseId": headspace
-  },
-  // LYL
-  {
-    "_id": Sophisticated,
-    "title": "Sophisticated",
-    "released": new Date("2015-01-13"),
-    "genres": ["R&B"],
-    "tags": [],
-    "stars": 3,
-    "releaseId": leaveYourLove
-  },
-  {
-    "_id": LeaveYourLove,
-    "title": "Leave Your Love",
-    "released": new Date("2015-01-13"),
-    "genres": ["R&B"],
-    "tags": [],
-    "stars": 3,
-    "releaseId": leaveYourLove
-  },
-  {
-    "_id": Georgia,
-    "title": "Georgia",
-    "released": new Date("2015-01-13"),
-    "genres": ["R&B"],
-    "tags": [],
-    "stars": 3,
-    "releaseId": leaveYourLove
-  },
-  {
-    "_id": SoSlow,
-    "title": "So Slow",
-    "released": new Date("2015-01-13"),
-    "genres": ["R&B"],
-    "tags": [],
-    "stars": 3,
-    "releaseId": leaveYourLove
-  },
-  {
-    "_id": TearsOnTheRunwayPt1,
-    "title": "Tears on the Runway Pt. 1",
-    "released": new Date("2015-01-13"),
-    "genres": ["R&B"],
-    "tags": [],
-    "stars": 3,
-    "releaseId": leaveYourLove
-  },
-  {
-    "_id": FindMe,
-    "title": "Find Me",
-    "released": new Date("2015-01-13"),
-    "genres": ["R&B"],
-    "tags": [],
-    "stars": 3,
-    "releaseId": leaveYourLove
-  },
-]);
 
 db.release.insertMany([
     {
@@ -874,6 +281,107 @@ db.release.insertMany([
       "genres": ["metalcore"],
       "tags": ["christian"],
       "stars": 5,
+      "tracks": [
+        {
+          "_id": TheWake,
+          "title": "The Wake",
+          "released": new Date("2015-06-30"),
+          "genres": ["metalcore"],
+          "tags": ["favorite"],
+          "stars": 5,
+          "releaseId": foundInFarAwayPlaces
+        },
+        {
+          "_id": Martyr,
+          "title": "Martyr",
+          "released": new Date("2015-06-30"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 5,
+          "releaseId": foundInFarAwayPlaces
+        },
+        {
+          "_id": Identity,
+          "title": "Identity",
+          "released": new Date("2015-06-30"),
+          "genres": ["metalcore"],
+          "tags": ["favorite"],
+          "stars": 5,
+          "releaseId": foundInFarAwayPlaces
+        },
+        {
+          "_id": SeparatingTheSeas,
+          "title": "Separating the Seas",
+          "released": new Date("2015-06-30"),
+          "genres": ["metalcore"],
+          "tags": ["favorite"],
+          "stars": 5,
+          "releaseId": foundInFarAwayPlaces
+        },
+        {
+          "_id": Ghosts,
+          "title": "Ghosts",
+          "released": new Date("2015-06-30"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 5,
+          "releaseId": foundInFarAwayPlaces
+        },
+        {
+          "_id": MajoringInTheMinors,
+          "title": "Majoring in the Minors",
+          "released": new Date("2015-06-30"),
+          "genres": ["metalcore"],
+          "tags": ["favorite"],
+          "stars": 5,
+          "releaseId": foundInFarAwayPlaces
+        },
+        {
+          "_id": EverlastingEnding,
+          "title": "Everlasting Ending",
+          "released": new Date("2015-06-30"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 5,
+          "releaseId": foundInFarAwayPlaces
+        },
+        {
+          "_id": BrokenPromises,
+          "title": "Broken Promises",
+          "released": new Date("2015-06-30"),
+          "genres": ["metalcore"],
+          "tags": ["favorite"],
+          "stars": 5,
+          "releaseId": foundInFarAwayPlaces
+        },
+        {
+          "_id": Blackwood,
+          "title": "Blackwood",
+          "released": new Date("2015-06-30"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 5,
+          "releaseId": foundInFarAwayPlaces
+        },
+        {
+          "_id": TwentyOneGrams,
+          "title": "Twenty-One Grams",
+          "released": new Date("2015-06-30"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 5,
+          "releaseId": foundInFarAwayPlaces
+        },
+        {
+          "_id": Vanguard,
+          "title": "Vanguard",
+          "released": new Date("2015-06-30"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 5,
+          "releaseId": foundInFarAwayPlaces
+        }
+      ],
       "musicians": [
         { "musician_id": jakeLuhrs, "instruments": ["vocals"] },
         { "musician_id": johnBenjaminBrubaker, "instruments": ["guitar"] },
@@ -890,6 +398,107 @@ db.release.insertMany([
       "genres": ["metalcore"],
       "tags": ["melodic"],
       "stars": 4,
+      "tracks": [
+        {
+          "_id": ThisIsWhatIKnowAboutSacrifice,
+          "title": "This Is What I Know About Sacrifice",
+          "released": new Date("2012-06-19"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 4,
+          "releaseId": getWhatYouGive
+        },
+        {
+          "_id": Outlive,
+          "title": "Outlive",
+          "released": new Date("2012-06-19"),
+          "genres": ["metalcore"],
+          "tags": ["favorite"],
+          "stars": 4,
+          "releaseId": getWhatYouGive
+        },
+        {
+          "_id": Engine45,
+          "title": "Engine 45",
+          "released": new Date("2012-06-19"),
+          "genres": ["metalcore"],
+          "tags": ["favorite"],
+          "stars": 4,
+          "releaseId": getWhatYouGive
+        },
+        {
+          "_id": SlippingAway,
+          "title": "Slipping Away",
+          "released": new Date("2012-06-19"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 4,
+          "releaseId": getWhatYouGive
+        },
+        {
+          "_id": TheGreatUnknown,
+          "title": "The Great Unknown",
+          "released": new Date("2012-06-19"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 4,
+          "releaseId": getWhatYouGive
+        },
+        {
+          "_id": DarkHorse,
+          "title": "Dark Horse",
+          "released": new Date("2012-06-19"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 4,
+          "releaseId": getWhatYouGive
+        },
+        {
+          "_id": WhiteLight,
+          "title": "White Light",
+          "released": new Date("2012-06-19"),
+          "genres": ["metalcore"],
+          "tags": ["favorite"],
+          "stars": 4,
+          "releaseId": getWhatYouGive
+        },
+        {
+          "_id": ThirtyThree,
+          "title": "Thirty Three",
+          "released": new Date("2012-06-19"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 4,
+          "releaseId": getWhatYouGive
+        },
+        {
+          "_id": FaceValue,
+          "title": "Face Value",
+          "released": new Date("2012-06-19"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 4,
+          "releaseId": getWhatYouGive
+        },
+        {
+          "_id": Deceiver,
+          "title": "Deceiver",
+          "released": new Date("2012-06-19"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 4,
+          "releaseId": getWhatYouGive
+        },
+        {
+          "_id": TestTheLimits,
+          "title": "Test the Limits",
+          "released": new Date("2012-06-19"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 4,
+          "releaseId": getWhatYouGive
+        }
+      ],
       "musicians": [
         { "musician_id": JonathanVigil, "instruments": ["vocals"] },
         { "musician_id": AaronBrooks, "instruments": ["guitar", "vocals"] },
@@ -906,6 +515,125 @@ db.release.insertMany([
       "genres": ["pop"],
       "tags": ["trap"],
       "stars": 3,
+      "tracks": [
+        {
+          "_id": Roar,
+          "title": "Roar",
+          "released": new Date("2013-08-18"),
+          "genres": ["pop"],
+          "tags": ["favorite"],
+          "stars": 3,
+          "releaseId": prism
+        },
+        {
+          "_id": LegendaryLovers,
+          "title": "Legendary Lovers",
+          "released": new Date("2013-08-18"),
+          "genres": ["pop"],
+          "tags": [],
+          "stars": 3,
+          "releaseId": prism
+        },
+        {
+          "_id": Birthday,
+          "title": "Birthday",
+          "released": new Date("2013-08-18"),
+          "genres": ["disco"],
+          "tags": [],
+          "stars": 3,
+          "releaseId": prism
+        },
+        {
+          "_id": WalkingOnAir,
+          "title": "Walking on Air",
+          "released": new Date("2013-08-18"),
+          "genres": ["deep house"],
+          "tags": [],
+          "stars": 3,
+          "releaseId": prism
+        },
+        {
+          "_id": Unconditionally,
+          "title": "Unconditionally",
+          "released": new Date("2013-08-18"),
+          "genres": ["pop rock"],
+          "tags": [],
+          "stars": 3,
+          "releaseId": prism
+        },
+        {
+          "_id": DarkHorseKP,
+          "title": "Dark Horse",
+          "released": new Date("2013-08-18"),
+          "genres": ["trap", "hip hop"],
+          "tags": ["favorite"],
+          "stars": 3,
+          "releaseId": prism
+        },
+        {
+          "_id": ThisIsHowWeDo,
+          "title": "This Is How We Do",
+          "released": new Date("2013-08-18"),
+          "genres": ["pop", "dance"],
+          "tags": [],
+          "stars": 3,
+          "releaseId": prism
+        },
+        {
+          "_id": InternationalSmile,
+          "title": "International Smile",
+          "released": new Date("2013-08-18"),
+          "genres": ["pop"],
+          "tags": [],
+          "stars": 3,
+          "releaseId": prism
+        },
+        {
+          "_id": Ghost,
+          "title": "Ghost",
+          "released": new Date("2013-08-18"),
+          "genres": ["pop"],
+          "tags": [],
+          "stars": 3,
+          "releaseId": prism
+        },
+        {
+          "_id": LoveMe,
+          "title": "Love Me",
+          "released": new Date("2013-08-18"),
+          "genres": ["pop"],
+          "tags": [],
+          "stars": 3,
+          "releaseId": prism
+        },
+        {
+          "_id": ThisMoment,
+          "title": "This Moment",
+          "released": new Date("2013-08-18"),
+          "genres": ["pop"],
+          "tags": [],
+          "stars": 3,
+          "releaseId": prism
+        },
+        {
+          "_id": DoubleRainbow,
+          "title": "Double Rainbow",
+          "released": new Date("2013-08-18"),
+          "genres": ["pop"],
+          "tags": [],
+          "stars": 3,
+          "releaseId": prism
+        },
+        {
+          "_id": ByTheGraceOfGod,
+          "title": "By the Grace of God",
+          "released": new Date("2013-08-18"),
+          "genres": ["pop", "christian"],
+          "tags": [],
+          "stars": 3,
+          "releaseId": prism
+        }
+      ],
       "musicians": [{ "musician_id": katyPerry, "instruments": ["vocals"] }],
       "band_id": katyPerry
     },
@@ -916,6 +644,107 @@ db.release.insertMany([
       "genres": ["metalcore"],
       "tags": ["christian"],
       "stars": 5,
+      "tracks": [
+        {
+          "_id": Provision,
+          "title": "Provision",
+          "released": new Date("2013-06-25"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 5,
+          "releaseId": rescueAndRestore
+        },
+        {
+          "_id": Treatment,
+          "title": "Treatment",
+          "released": new Date("2013-06-25"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 5,
+          "releaseId": rescueAndRestore
+        },
+        {
+          "_id": SpiritBreaker,
+          "title": "Spirit Breaker",
+          "released": new Date("2013-06-25"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 5,
+          "releaseId": rescueAndRestore
+        },
+        {
+          "_id": CountItAllAsLost,
+          "title": "Count It All as Lost",
+          "released": new Date("2013-06-25"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 5,
+          "releaseId": rescueAndRestore
+        },
+        {
+          "_id": Sincerity,
+          "title": "Sincerity",
+          "released": new Date("2013-06-25"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 5,
+          "releaseId": rescueAndRestore
+        },
+        {
+          "_id": CreativeCaptivity,
+          "title": "Creative Captivity",
+          "released": new Date("2013-06-25"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 5,
+          "releaseId": rescueAndRestore
+        },
+        {
+          "_id": FaultLine,
+          "title": "Fault Line",
+          "released": new Date("2013-06-25"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 5,
+          "releaseId": rescueAndRestore
+        },
+        {
+          "_id": BeautyInTragedy,
+          "title": "Beauty in Tragedy",
+          "released": new Date("2013-06-25"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 5,
+          "releaseId": rescueAndRestore
+        },
+        {
+          "_id": Animals,
+          "title": "Animals",
+          "released": new Date("2013-06-25"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 5,
+          "releaseId": rescueAndRestore
+        },
+        {
+          "_id": Echoes,
+          "title": "Echoes",
+          "released": new Date("2013-06-25"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 5,
+          "releaseId": rescueAndRestore
+        },
+        {
+          "_id": TheFirstStep,
+          "title": "The First Step",
+          "released": new Date("2013-06-25"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 5,
+          "releaseId": rescueAndRestore
+        }
+      ],
       "musicians": [
         { "musician_id": jakeLuhrs, "instruments": ["vocals"] },
         { "musician_id": johnBenjaminBrubaker, "instruments": ["guitar"] },
@@ -932,6 +761,125 @@ db.release.insertMany([
       "genres": ["metalcore"],
       "tags": ["nu metal"],
       "stars": 4,
+      "tracks": [
+        {
+          "_id": TheRealest,
+          "title": "The Realest",
+          "released": new Date("2016-05-20"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 4,
+          "releaseId": headspace
+        },
+        {
+          "_id": HomeSoon,
+          "title": "Home Soon",
+          "released": new Date("2016-05-20"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 4,
+          "releaseId": headspace
+        },
+        {
+          "_id": LostAndFound,
+          "title": "Lost-n-Found (On a Roll)",
+          "released": new Date("2016-05-20"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 4,
+          "releaseId": headspace
+        },
+        {
+          "_id": YungAndDum,
+          "title": "Yung & Dum",
+          "released": new Date("2016-05-20"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 4,
+          "releaseId": headspace
+        },
+        {
+          "_id": MadeToLast,
+          "title": "Made to Last",
+          "released": new Date("2016-05-20"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 4,
+          "releaseId": headspace
+        },
+        {
+          "_id": Flojo,
+          "title": "Flojo",
+          "released": new Date("2016-05-20"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 4,
+          "releaseId": headspace
+        },
+        {
+          "_id": Hero,
+          "title": "Hero",
+          "released": new Date("2016-05-20"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 4,
+          "releaseId": headspace
+        },
+        {
+          "_id": Coma,
+          "title": "COMA",
+          "released": new Date("2016-05-20"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 4,
+          "releaseId": headspace
+        },
+        {
+          "_id": RankRider,
+          "title": "Rank Rider",
+          "released": new Date("2016-05-20"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 4,
+          "releaseId": headspace
+        },
+        {
+          "_id": BlueWall,
+          "title": "Blue Wall",
+          "released": new Date("2016-05-20"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 4,
+          "releaseId": headspace
+        },
+        {
+          "_id": SomeoneWhoDoes,
+          "title": "Someone Who Does",
+          "released": new Date("2016-05-20"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 4,
+          "releaseId": headspace
+        },
+        {
+          "_id": IAlwaysKnew,
+          "title": "I Always Knew",
+          "released": new Date("2016-05-20"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 4,
+          "releaseId": headspace
+        },
+        {
+          "_id": SlowMeDown,
+          "title": "Slow Me Down",
+          "released": new Date("2016-05-20"),
+          "genres": ["metalcore"],
+          "tags": [],
+          "stars": 4,
+          "releaseId": headspace
+        }
+      ],
       "musicians": [
         { "musician_id": TylerCarter, "instruments": ["vocals"] },
         { "musician_id": MichaelBohn, "instruments": ["vocals"] },
@@ -949,6 +897,62 @@ db.release.insertMany([
       "genres": ["R&B"],
       "tags": ["Solo EP"],
       "stars": 3,
+      "tracks": [
+        {
+          "_id": Sophisticated,
+          "title": "Sophisticated",
+          "released": new Date("2015-01-13"),
+          "genres": ["R&B"],
+          "tags": [],
+          "stars": 3,
+          "releaseId": leaveYourLove
+        },
+        {
+          "_id": LeaveYourLove,
+          "title": "Leave Your Love",
+          "released": new Date("2015-01-13"),
+          "genres": ["R&B"],
+          "tags": [],
+          "stars": 3,
+          "releaseId": leaveYourLove
+        },
+        {
+          "_id": Georgia,
+          "title": "Georgia",
+          "released": new Date("2015-01-13"),
+          "genres": ["R&B"],
+          "tags": [],
+          "stars": 3,
+          "releaseId": leaveYourLove
+        },
+        {
+          "_id": SoSlow,
+          "title": "So Slow",
+          "released": new Date("2015-01-13"),
+          "genres": ["R&B"],
+          "tags": [],
+          "stars": 3,
+          "releaseId": leaveYourLove
+        },
+        {
+          "_id": TearsOnTheRunwayPt1,
+          "title": "Tears on the Runway Pt. 1",
+          "released": new Date("2015-01-13"),
+          "genres": ["R&B"],
+          "tags": [],
+          "stars": 3,
+          "releaseId": leaveYourLove
+        },
+        {
+          "_id": FindMe,
+          "title": "Find Me",
+          "released": new Date("2015-01-13"),
+          "genres": ["R&B"],
+          "tags": [],
+          "stars": 3,
+          "releaseId": leaveYourLove
+        }
+      ],
       "musicians": [{ "musician_id": TylerCarter, "instruments": ["vocals"] }],
       "band_id": tylerCarter
     }
