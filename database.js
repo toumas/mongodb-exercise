@@ -277,7 +277,7 @@ db.release.insertMany([
     {
       "_id": foundInFarAwayPlaces,
       "title": "Found in Far Away Places",
-      "released": new Date("2015-06-30"),
+      "releaseDate": new Date("2015-06-30"),
       "genres": ["metalcore"],
       "tags": ["christian"],
       "stars": 5,
@@ -285,7 +285,7 @@ db.release.insertMany([
         {
           "_id": TheWake,
           "title": "The Wake",
-          "released": new Date("2015-06-30"),
+          "releaseDate": new Date("2015-06-30"),
           "genres": ["metalcore"],
           "tags": ["favorite"],
           "stars": 5,
@@ -294,7 +294,7 @@ db.release.insertMany([
         {
           "_id": Martyr,
           "title": "Martyr",
-          "released": new Date("2015-06-30"),
+          "releaseDate": new Date("2015-06-30"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 5,
@@ -303,7 +303,7 @@ db.release.insertMany([
         {
           "_id": Identity,
           "title": "Identity",
-          "released": new Date("2015-06-30"),
+          "releaseDate": new Date("2015-06-30"),
           "genres": ["metalcore"],
           "tags": ["favorite"],
           "stars": 5,
@@ -312,7 +312,7 @@ db.release.insertMany([
         {
           "_id": SeparatingTheSeas,
           "title": "Separating the Seas",
-          "released": new Date("2015-06-30"),
+          "releaseDate": new Date("2015-06-30"),
           "genres": ["metalcore"],
           "tags": ["favorite"],
           "stars": 5,
@@ -321,7 +321,7 @@ db.release.insertMany([
         {
           "_id": Ghosts,
           "title": "Ghosts",
-          "released": new Date("2015-06-30"),
+          "releaseDate": new Date("2015-06-30"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 5,
@@ -330,7 +330,7 @@ db.release.insertMany([
         {
           "_id": MajoringInTheMinors,
           "title": "Majoring in the Minors",
-          "released": new Date("2015-06-30"),
+          "releaseDate": new Date("2015-06-30"),
           "genres": ["metalcore"],
           "tags": ["favorite"],
           "stars": 5,
@@ -339,7 +339,7 @@ db.release.insertMany([
         {
           "_id": EverlastingEnding,
           "title": "Everlasting Ending",
-          "released": new Date("2015-06-30"),
+          "releaseDate": new Date("2015-06-30"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 5,
@@ -348,7 +348,7 @@ db.release.insertMany([
         {
           "_id": BrokenPromises,
           "title": "Broken Promises",
-          "released": new Date("2015-06-30"),
+          "releaseDate": new Date("2015-06-30"),
           "genres": ["metalcore"],
           "tags": ["favorite"],
           "stars": 5,
@@ -357,7 +357,7 @@ db.release.insertMany([
         {
           "_id": Blackwood,
           "title": "Blackwood",
-          "released": new Date("2015-06-30"),
+          "releaseDate": new Date("2015-06-30"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 5,
@@ -366,7 +366,7 @@ db.release.insertMany([
         {
           "_id": TwentyOneGrams,
           "title": "Twenty-One Grams",
-          "released": new Date("2015-06-30"),
+          "releaseDate": new Date("2015-06-30"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 5,
@@ -375,7 +375,7 @@ db.release.insertMany([
         {
           "_id": Vanguard,
           "title": "Vanguard",
-          "released": new Date("2015-06-30"),
+          "releaseDate": new Date("2015-06-30"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 5,
@@ -394,15 +394,15 @@ db.release.insertMany([
     {
       "_id": getWhatYouGive,
       "title": "Get What You Give",
-      "released": new Date("2012-06-19"),
+      "releaseDate": new Date("2012-06-19"),
       "genres": ["metalcore"],
-      "tags": ["melodic"],
+      "tags": ["melodic", "favorite"],
       "stars": 4,
       "tracks": [
         {
           "_id": ThisIsWhatIKnowAboutSacrifice,
           "title": "This Is What I Know About Sacrifice",
-          "released": new Date("2012-06-19"),
+          "releaseDate": new Date("2012-06-19"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 4,
@@ -411,7 +411,7 @@ db.release.insertMany([
         {
           "_id": Outlive,
           "title": "Outlive",
-          "released": new Date("2012-06-19"),
+          "releaseDate": new Date("2012-06-19"),
           "genres": ["metalcore"],
           "tags": ["favorite"],
           "stars": 4,
@@ -420,7 +420,7 @@ db.release.insertMany([
         {
           "_id": Engine45,
           "title": "Engine 45",
-          "released": new Date("2012-06-19"),
+          "releaseDate": new Date("2012-06-19"),
           "genres": ["metalcore"],
           "tags": ["favorite"],
           "stars": 4,
@@ -429,7 +429,7 @@ db.release.insertMany([
         {
           "_id": SlippingAway,
           "title": "Slipping Away",
-          "released": new Date("2012-06-19"),
+          "releaseDate": new Date("2012-06-19"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 4,
@@ -438,7 +438,7 @@ db.release.insertMany([
         {
           "_id": TheGreatUnknown,
           "title": "The Great Unknown",
-          "released": new Date("2012-06-19"),
+          "releaseDate": new Date("2012-06-19"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 4,
@@ -447,7 +447,7 @@ db.release.insertMany([
         {
           "_id": DarkHorse,
           "title": "Dark Horse",
-          "released": new Date("2012-06-19"),
+          "releaseDate": new Date("2012-06-19"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 4,
@@ -456,7 +456,7 @@ db.release.insertMany([
         {
           "_id": WhiteLight,
           "title": "White Light",
-          "released": new Date("2012-06-19"),
+          "releaseDate": new Date("2012-06-19"),
           "genres": ["metalcore"],
           "tags": ["favorite"],
           "stars": 4,
@@ -465,7 +465,7 @@ db.release.insertMany([
         {
           "_id": ThirtyThree,
           "title": "Thirty Three",
-          "released": new Date("2012-06-19"),
+          "releaseDate": new Date("2012-06-19"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 4,
@@ -474,7 +474,7 @@ db.release.insertMany([
         {
           "_id": FaceValue,
           "title": "Face Value",
-          "released": new Date("2012-06-19"),
+          "releaseDate": new Date("2012-06-19"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 4,
@@ -483,7 +483,7 @@ db.release.insertMany([
         {
           "_id": Deceiver,
           "title": "Deceiver",
-          "released": new Date("2012-06-19"),
+          "releaseDate": new Date("2012-06-19"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 4,
@@ -492,7 +492,7 @@ db.release.insertMany([
         {
           "_id": TestTheLimits,
           "title": "Test the Limits",
-          "released": new Date("2012-06-19"),
+          "releaseDate": new Date("2012-06-19"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 4,
@@ -511,15 +511,15 @@ db.release.insertMany([
     {
       "_id": prism,
       "title": "Prism",
-      "released": new Date("2013-12-17"),
+      "releaseDate": new Date("2013-12-17"),
       "genres": ["pop"],
-      "tags": ["trap"],
+      "tags": [],
       "stars": 3,
       "tracks": [
         {
           "_id": Roar,
           "title": "Roar",
-          "released": new Date("2013-08-18"),
+          "releaseDate": new Date("2013-08-18"),
           "genres": ["pop"],
           "tags": ["favorite"],
           "stars": 3,
@@ -528,7 +528,7 @@ db.release.insertMany([
         {
           "_id": LegendaryLovers,
           "title": "Legendary Lovers",
-          "released": new Date("2013-08-18"),
+          "releaseDate": new Date("2013-08-18"),
           "genres": ["pop"],
           "tags": [],
           "stars": 3,
@@ -537,7 +537,7 @@ db.release.insertMany([
         {
           "_id": Birthday,
           "title": "Birthday",
-          "released": new Date("2013-08-18"),
+          "releaseDate": new Date("2013-08-18"),
           "genres": ["disco"],
           "tags": [],
           "stars": 3,
@@ -546,7 +546,7 @@ db.release.insertMany([
         {
           "_id": WalkingOnAir,
           "title": "Walking on Air",
-          "released": new Date("2013-08-18"),
+          "releaseDate": new Date("2013-08-18"),
           "genres": ["deep house"],
           "tags": [],
           "stars": 3,
@@ -555,7 +555,7 @@ db.release.insertMany([
         {
           "_id": Unconditionally,
           "title": "Unconditionally",
-          "released": new Date("2013-08-18"),
+          "releaseDate": new Date("2013-08-18"),
           "genres": ["pop rock"],
           "tags": [],
           "stars": 3,
@@ -564,7 +564,7 @@ db.release.insertMany([
         {
           "_id": DarkHorseKP,
           "title": "Dark Horse",
-          "released": new Date("2013-08-18"),
+          "releaseDate": new Date("2013-08-18"),
           "genres": ["trap", "hip hop"],
           "tags": ["favorite"],
           "stars": 3,
@@ -573,7 +573,7 @@ db.release.insertMany([
         {
           "_id": ThisIsHowWeDo,
           "title": "This Is How We Do",
-          "released": new Date("2013-08-18"),
+          "releaseDate": new Date("2013-08-18"),
           "genres": ["pop", "dance"],
           "tags": [],
           "stars": 3,
@@ -582,7 +582,7 @@ db.release.insertMany([
         {
           "_id": InternationalSmile,
           "title": "International Smile",
-          "released": new Date("2013-08-18"),
+          "releaseDate": new Date("2013-08-18"),
           "genres": ["pop"],
           "tags": [],
           "stars": 3,
@@ -591,7 +591,7 @@ db.release.insertMany([
         {
           "_id": Ghost,
           "title": "Ghost",
-          "released": new Date("2013-08-18"),
+          "releaseDate": new Date("2013-08-18"),
           "genres": ["pop"],
           "tags": [],
           "stars": 3,
@@ -600,7 +600,7 @@ db.release.insertMany([
         {
           "_id": LoveMe,
           "title": "Love Me",
-          "released": new Date("2013-08-18"),
+          "releaseDate": new Date("2013-08-18"),
           "genres": ["pop"],
           "tags": [],
           "stars": 3,
@@ -609,7 +609,7 @@ db.release.insertMany([
         {
           "_id": ThisMoment,
           "title": "This Moment",
-          "released": new Date("2013-08-18"),
+          "releaseDate": new Date("2013-08-18"),
           "genres": ["pop"],
           "tags": [],
           "stars": 3,
@@ -618,7 +618,7 @@ db.release.insertMany([
         {
           "_id": DoubleRainbow,
           "title": "Double Rainbow",
-          "released": new Date("2013-08-18"),
+          "releaseDate": new Date("2013-08-18"),
           "genres": ["pop"],
           "tags": [],
           "stars": 3,
@@ -627,7 +627,7 @@ db.release.insertMany([
         {
           "_id": ByTheGraceOfGod,
           "title": "By the Grace of God",
-          "released": new Date("2013-08-18"),
+          "releaseDate": new Date("2013-08-18"),
           "genres": ["pop", "christian"],
           "tags": [],
           "stars": 3,
@@ -640,15 +640,15 @@ db.release.insertMany([
     {
       "_id": rescueAndRestore,
       "title": "Rescue & Restore",
-      "released": new Date("2013-06-25"),
+      "releaseDate": new Date("2013-06-25"),
       "genres": ["metalcore"],
-      "tags": ["christian"],
+      "tags": ["christian", "favorite"],
       "stars": 5,
       "tracks": [
         {
           "_id": Provision,
           "title": "Provision",
-          "released": new Date("2013-06-25"),
+          "releaseDate": new Date("2013-06-25"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 5,
@@ -657,7 +657,7 @@ db.release.insertMany([
         {
           "_id": Treatment,
           "title": "Treatment",
-          "released": new Date("2013-06-25"),
+          "releaseDate": new Date("2013-06-25"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 5,
@@ -666,7 +666,7 @@ db.release.insertMany([
         {
           "_id": SpiritBreaker,
           "title": "Spirit Breaker",
-          "released": new Date("2013-06-25"),
+          "releaseDate": new Date("2013-06-25"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 5,
@@ -675,7 +675,7 @@ db.release.insertMany([
         {
           "_id": CountItAllAsLost,
           "title": "Count It All as Lost",
-          "released": new Date("2013-06-25"),
+          "releaseDate": new Date("2013-06-25"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 5,
@@ -684,7 +684,7 @@ db.release.insertMany([
         {
           "_id": Sincerity,
           "title": "Sincerity",
-          "released": new Date("2013-06-25"),
+          "releaseDate": new Date("2013-06-25"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 5,
@@ -693,7 +693,7 @@ db.release.insertMany([
         {
           "_id": CreativeCaptivity,
           "title": "Creative Captivity",
-          "released": new Date("2013-06-25"),
+          "releaseDate": new Date("2013-06-25"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 5,
@@ -702,7 +702,7 @@ db.release.insertMany([
         {
           "_id": FaultLine,
           "title": "Fault Line",
-          "released": new Date("2013-06-25"),
+          "releaseDate": new Date("2013-06-25"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 5,
@@ -711,7 +711,7 @@ db.release.insertMany([
         {
           "_id": BeautyInTragedy,
           "title": "Beauty in Tragedy",
-          "released": new Date("2013-06-25"),
+          "releaseDate": new Date("2013-06-25"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 5,
@@ -720,7 +720,7 @@ db.release.insertMany([
         {
           "_id": Animals,
           "title": "Animals",
-          "released": new Date("2013-06-25"),
+          "releaseDate": new Date("2013-06-25"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 5,
@@ -729,7 +729,7 @@ db.release.insertMany([
         {
           "_id": Echoes,
           "title": "Echoes",
-          "released": new Date("2013-06-25"),
+          "releaseDate": new Date("2013-06-25"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 5,
@@ -738,7 +738,7 @@ db.release.insertMany([
         {
           "_id": TheFirstStep,
           "title": "The First Step",
-          "released": new Date("2013-06-25"),
+          "releaseDate": new Date("2013-06-25"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 5,
@@ -757,15 +757,15 @@ db.release.insertMany([
     {
       "_id": headspace,
       "title": "Headspace",
-      "released": new Date("2016-05-20"),
-      "genres": ["metalcore"],
+      "releaseDate": new Date("2016-05-20"),
+      "genres": ["metalcore", "nu metal"],
       "tags": ["nu metal"],
       "stars": 4,
       "tracks": [
         {
           "_id": TheRealest,
           "title": "The Realest",
-          "released": new Date("2016-05-20"),
+          "releaseDate": new Date("2016-05-20"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 4,
@@ -774,7 +774,7 @@ db.release.insertMany([
         {
           "_id": HomeSoon,
           "title": "Home Soon",
-          "released": new Date("2016-05-20"),
+          "releaseDate": new Date("2016-05-20"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 4,
@@ -783,7 +783,7 @@ db.release.insertMany([
         {
           "_id": LostAndFound,
           "title": "Lost-n-Found (On a Roll)",
-          "released": new Date("2016-05-20"),
+          "releaseDate": new Date("2016-05-20"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 4,
@@ -792,7 +792,7 @@ db.release.insertMany([
         {
           "_id": YungAndDum,
           "title": "Yung & Dum",
-          "released": new Date("2016-05-20"),
+          "releaseDate": new Date("2016-05-20"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 4,
@@ -801,7 +801,7 @@ db.release.insertMany([
         {
           "_id": MadeToLast,
           "title": "Made to Last",
-          "released": new Date("2016-05-20"),
+          "releaseDate": new Date("2016-05-20"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 4,
@@ -810,7 +810,7 @@ db.release.insertMany([
         {
           "_id": Flojo,
           "title": "Flojo",
-          "released": new Date("2016-05-20"),
+          "releaseDate": new Date("2016-05-20"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 4,
@@ -819,7 +819,7 @@ db.release.insertMany([
         {
           "_id": Hero,
           "title": "Hero",
-          "released": new Date("2016-05-20"),
+          "releaseDate": new Date("2016-05-20"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 4,
@@ -828,7 +828,7 @@ db.release.insertMany([
         {
           "_id": Coma,
           "title": "COMA",
-          "released": new Date("2016-05-20"),
+          "releaseDate": new Date("2016-05-20"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 4,
@@ -837,7 +837,7 @@ db.release.insertMany([
         {
           "_id": RankRider,
           "title": "Rank Rider",
-          "released": new Date("2016-05-20"),
+          "releaseDate": new Date("2016-05-20"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 4,
@@ -846,7 +846,7 @@ db.release.insertMany([
         {
           "_id": BlueWall,
           "title": "Blue Wall",
-          "released": new Date("2016-05-20"),
+          "releaseDate": new Date("2016-05-20"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 4,
@@ -855,7 +855,7 @@ db.release.insertMany([
         {
           "_id": SomeoneWhoDoes,
           "title": "Someone Who Does",
-          "released": new Date("2016-05-20"),
+          "releaseDate": new Date("2016-05-20"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 4,
@@ -864,7 +864,7 @@ db.release.insertMany([
         {
           "_id": IAlwaysKnew,
           "title": "I Always Knew",
-          "released": new Date("2016-05-20"),
+          "releaseDate": new Date("2016-05-20"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 4,
@@ -873,7 +873,7 @@ db.release.insertMany([
         {
           "_id": SlowMeDown,
           "title": "Slow Me Down",
-          "released": new Date("2016-05-20"),
+          "releaseDate": new Date("2016-05-20"),
           "genres": ["metalcore"],
           "tags": [],
           "stars": 4,
@@ -893,16 +893,16 @@ db.release.insertMany([
     {
       "_id": leaveYourLove,
       "title": "Leave Your Love",
-      "released": new Date("2015-01-13"),
-      "genres": ["R&B"],
-      "tags": ["Solo EP"],
+      "releaseDate": new Date("2015-01-13"),
+      "genres": ["r&b"],
+      "tags": ["ep"],
       "stars": 3,
       "tracks": [
         {
           "_id": Sophisticated,
           "title": "Sophisticated",
-          "released": new Date("2015-01-13"),
-          "genres": ["R&B"],
+          "releaseDate": new Date("2015-01-13"),
+          "genres": ["r&b"],
           "tags": [],
           "stars": 3,
           "releaseId": leaveYourLove
@@ -910,8 +910,8 @@ db.release.insertMany([
         {
           "_id": LeaveYourLove,
           "title": "Leave Your Love",
-          "released": new Date("2015-01-13"),
-          "genres": ["R&B"],
+          "releaseDate": new Date("2015-01-13"),
+          "genres": ["r&b"],
           "tags": [],
           "stars": 3,
           "releaseId": leaveYourLove
@@ -919,8 +919,8 @@ db.release.insertMany([
         {
           "_id": Georgia,
           "title": "Georgia",
-          "released": new Date("2015-01-13"),
-          "genres": ["R&B"],
+          "releaseDate": new Date("2015-01-13"),
+          "genres": ["r&b"],
           "tags": [],
           "stars": 3,
           "releaseId": leaveYourLove
@@ -928,8 +928,8 @@ db.release.insertMany([
         {
           "_id": SoSlow,
           "title": "So Slow",
-          "released": new Date("2015-01-13"),
-          "genres": ["R&B"],
+          "releaseDate": new Date("2015-01-13"),
+          "genres": ["r&b"],
           "tags": [],
           "stars": 3,
           "releaseId": leaveYourLove
@@ -937,8 +937,8 @@ db.release.insertMany([
         {
           "_id": TearsOnTheRunwayPt1,
           "title": "Tears on the Runway Pt. 1",
-          "released": new Date("2015-01-13"),
-          "genres": ["R&B"],
+          "releaseDate": new Date("2015-01-13"),
+          "genres": ["r&b"],
           "tags": [],
           "stars": 3,
           "releaseId": leaveYourLove
@@ -946,8 +946,8 @@ db.release.insertMany([
         {
           "_id": FindMe,
           "title": "Find Me",
-          "released": new Date("2015-01-13"),
-          "genres": ["R&B"],
+          "releaseDate": new Date("2015-01-13"),
+          "genres": ["r&b"],
           "tags": [],
           "stars": 3,
           "releaseId": leaveYourLove
