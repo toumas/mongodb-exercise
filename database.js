@@ -152,35 +152,30 @@ db.musician.insertMany([
     "_id": jakeLuhrs,
     "fname": "Jake",
     "lname": "Luhrs",
-    "instruments": ["vocals"],
     "associated_acts": [augustBurnsRed]
   },
   {
     "_id": johnBenjaminBrubaker,
     "fname": "John Benjamin",
     "lname": "Brubaker",
-    "instrument": ["guitar"],
     "associated_acts": [augustBurnsRed]
   },
   {
     "_id": brentRambler,
     "fname": "Brent",
     "lname": "Rambler",
-    "instrument": ["guitar"],
     "associated_acts": [augustBurnsRed]
   },
   {
     "_id": dustinDavidson,
     "fname": "Dustin",
     "lname": "Davidson",
-    "instrument": ["bass", "vocals"],
     "associated_acts": [augustBurnsRed]
   },
   {
     "_id": mattGreiner,
     "fname": "Matt",
     "lname": "Greiner",
-    "instrument": ["drums"],
     "associated_acts": [augustBurnsRed]
   },
   // TGI
@@ -188,35 +183,30 @@ db.musician.insertMany([
     "_id": JonathanVigil,
     "fname": "Jonathan",
     "lname": "Vigil",
-    "instruments": ["vocals"],
     "associated_acts": [theGhostInside]
   },
   {
     "_id": AaronBrooks,
     "fname": "Aaron",
     "lname": "Brooks",
-    "instruments": ["guitar", "vocals"],
     "associated_acts": [theGhostInside]
   },
   {
     "_id": JimRiley,
     "fname": "Jim",
     "lname": "Riley",
-    "instruments": ["bass"],
     "associated_acts": [theGhostInside]
   },
   {
     "_id": ZackJohnson,
     "fname": "Zack",
     "lname": "Johnson",
-    "instruments": ["guitar"],
     "associated_acts": [theGhostInside]
   },
   {
     "_id": AndrewTkaczyk,
     "fname": "Andrew",
     "lname": "Tkaczyk",
-    "instruments": ["drums"],
     "associated_acts": [theGhostInside]
   },
   //Issues
@@ -224,42 +214,36 @@ db.musician.insertMany([
     "_id": TylerCarter,
     "fname": "Tyler",
     "lname": "Carter",
-    "instruments": ["vocals"],
     "associated_acts": [issues, tylerCarter]
   },
   {
     "_id": MichaelBohn,
     "fname": "Michael",
     "lname": "Bohn",
-    "instruments": ["vocals"],
     "associated_acts": [issues]
   },
   {
     "_id": AdrianRebollo,
     "fname": "Adrian",
     "lname": "Rebollo",
-    "instruments": ["guitar", "vocals"],
     "associated_acts": [issues]
   },
   {
     "_id": SkylerAcord,
     "fname": "Skyler",
     "lname": "Acord",
-    "instruments": ["bass"],
     "associated_acts": [issues]
   },
   {
     "_id": JoshManuel,
     "fname": "Josh",
     "lname": "Manuel",
-    "instruments": ["drums"],
     "associated_acts": [issues]
   },
   {
     "_id": TylerAcord,
     "fname": "Tyler",
     "lname": "Acord",
-    "instruments": ["turntable", "keyboard", "synthesizer"],
     "associated_acts": [issues]
   },
   // MISC
@@ -267,7 +251,6 @@ db.musician.insertMany([
     "_id": KatyPerry,
     "fname": "Katy",
     "lname": "Perry",
-    "instruments": ["vocals"],
     "associated_acts": [katyPerry]
   }
 ]);
@@ -958,3 +941,9 @@ db.release.insertMany([
     }
   ]
 );
+
+/* INDEXES */
+db.release.createIndex({"tags": 1});
+db.release.createIndex({"stars": 1});
+db.release.createIndex({"tracks.tags": 1});
+db.release.createIndex({"tracks.stars": 1});

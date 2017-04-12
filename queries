@@ -70,6 +70,7 @@ db.release.find(
 db.release.aggregate(
     [
         { $unwind: "$tracks" },
+        { $project: { "tracks": 1} },
         { $match: { "tracks.genres": "pop" } },
         { $project: { "_id": 0, "tracks.title": 1, "tracks.genres": 1 } }
     ]
@@ -79,6 +80,7 @@ db.release.aggregate(
 db.release.aggregate(
     [
         { $unwind: "$tracks" },
+        { $project: { "tracks": 1} },
         { $match: { "tracks.releaseDate": { $gt: new Date("2011"), $lt: new Date("2014") } } },
         { $project: { "_id": 0, "tracks.title": 1, "tracks.releaseDate": 1 } }
     ]
@@ -87,6 +89,8 @@ db.release.aggregate(
 /* Get all songs that are tagged as favorite */
 db.release.aggregate(
     [
+        { $match: { "tracks.tags": { $in: ["favorite"] } } },
+        { $project: { "tracks": 1 } },
         { $unwind: "$tracks" },
         { $match: { "tracks.tags": "favorite" } },
         { $project: { "_id": 0, "tracks.title": 1 } }
@@ -104,30 +108,11 @@ db.release.find(
 /* Get all songs with 5 stars */
 db.release.aggregate(
     [
+        { $match: { "tracks.stars": 5 } },
+        { $project: { "tracks": 1} },
         { $unwind: "$tracks" },
-        { $match: { "stars": 5 } },
+        { $match: { "tracks.stars": 5 } },
         { $project: { "_id": 0, "tracks.title": 1, "tracks.stars": 1 } }
-    ]
-);
-
-
-/* SAVED */
-db.band.aggregate(
-    [
-        {
-            $lookup: {
-               from: "release",
-               localField: "releases",
-               foreignField: "_id",
-               as: "releaseInfo"
-            }
-        },
-        {
-            $group: {
-                "_id": { "Band": "$name" },
-                "Releases": { $push: "$releaseInfo.title"}
-            }
-        }
     ]
 );
 
