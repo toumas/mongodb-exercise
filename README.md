@@ -86,8 +86,6 @@ db.musician.find({}, {_id: 0, fname: 1, lname: 1});
 { "fname" : "Tyler", "lname" : "Acord" }
 { "fname" : "Katy", "lname" : "Perry" }
 ```
-```
-```
 Mitä levyjä tietyltä yhtyeeltä löytyy?
 ```
 var band = db.band.findOne({"name": "August Burns Red"});
@@ -169,8 +167,6 @@ db.release.find(
 { "title" : "Leave Your Love" }
 ```
 ```
-```
-```
 /* Get all released tagged as favorite */
 db.release.find(
         { "tags": { $in: ["favorite"] } },
@@ -237,10 +233,6 @@ db.release.aggregate(
 { "tracks" : { "title" : "International Smile", "releaseDate" : ISODate("2013-08-18T00:00:00Z") } }
 { "tracks" : { "title" : "Ghost", "releaseDate" : ISODate("2013-08-18T00:00:00Z") } }
 Type "it" for more
-```
-```
-```
-```
 ```
 ```
 /* Get all songs that are tagged as favorite */
