@@ -1,21 +1,21 @@
-﻿##Tietokanta
+﻿## Tietokanta
 Tietokannassa on kolme kokoelmaa: band, musician ja release. Band sisältää yksittäiset artistit sekä yhtyeet, musician listaa kaikki muusikot ja release luonnollisesti tallettaa kaiken datan levyistä. 
 
 
-##Rakenne
-###Band -kokoelman dokumentti sisältää seuraavanlaiset kentät (‘_id’ -kenttä tavanomaisesti sisältyy vaikkei sitä mainita):
+## Rakenne
+### Band -kokoelman dokumentti sisältää seuraavanlaiset kentät (‘_id’ -kenttä tavanomaisesti sisältyy vaikkei sitä mainita):
 * name : artistin tai yhtyeen nimi
 * members[] : viittaa musician -kokoelman dokumentteihin
 * releases[] : viittaa release -kokoelman dokumentteihin
 
 
-###Musician -kokoelma koostuu kentistä:
+### Musician -kokoelma koostuu kentistä:
 * fname : muusikon etunimi
 * lname : muusikon sukunimi
 * associated_acts[] : viittaa band -kokoelman dokumentteihin
 
 
-###Release -kokoelman rakenne:
+### Release -kokoelman rakenne:
 * title : julkaisun nimi
 * releaseDate :  julkaisupäivämäärä  Date -tyyppisenä
 * genres[] : String -tyyppinen taulukko julkaisun genreistä
@@ -26,7 +26,7 @@ Tietokannassa on kolme kokoelmaa: band, musician ja release. Band sisältää yk
 * band_id : viittaus band -kokoelman dokumenttiin
 
 
-###Kappale-olio:
+### Kappale-olio:
 * title : kappaleen nimi
 * releaseDate : julkaisupäivämäärä  Date -tyyppisenä
 * genres[] : String -tyyppinen taulukko kappaleen genreistä
@@ -41,10 +41,8 @@ Tietokannassa on indeksoitu release -kokoelmasta tags, stars sekä vastaavat ken
 
 
 
-##Haut
-```
-/*Mitä levyjä, yhtyeitä/sooloartisteja ja muusikoita (ts. yhtyeiden jäseniä) kokoelmasta löytyy?*/
-```
+## Haut
+Mitä levyjä, yhtyeitä/sooloartisteja ja muusikoita (ts. yhtyeiden jäseniä) kokoelmasta löytyy?*/
 ```
 db.release.find({}, {_id: 0, title: 1});
 ```
@@ -90,9 +88,7 @@ db.musician.find({}, {_id: 0, fname: 1, lname: 1});
 ```
 ```
 ```
-```
-/*Mitä levyjä tietyltä yhtyeeltä löytyy?*/
-```
+Mitä levyjä tietyltä yhtyeeltä löytyy?*/
 ```
 var band = db.band.findOne({"name": "August Burns Red"});
 db.release.find({"band_id": band._id}, {_id: 0, title: 1});
@@ -101,9 +97,7 @@ db.release.find({"band_id": band._id}, {_id: 0, title: 1});
 { "title" : "Found in Far Away Places" }
 { "title" : "Rescue & Restore" }
 ```
-```
-/*Millä levyillä tietty muusikko on soittanut ja mitä instrumenttia?*/
-```
+Millä levyillä tietty muusikko on soittanut ja mitä instrumenttia?*/
 ```
 var musician = db.musician.findOne({"fname": "Tyler", "lname": "Carter"});
 db.release.find(
@@ -119,9 +113,7 @@ db.release.find(
 { "title" : "Headspace", "musicians" : [ { "musician_id" : ObjectId("58ef4bc4cbf318231e528228"), "instruments" : [ "vocals" ] } ] }
 { "title" : "Leave Your Love", "musicians" : [ { "musician_id" : ObjectId("58ef4bc4cbf318231e528228"), "instruments" : [ "vocals" ] } ] }
 ```
-```
-/*Missä yhtyeissä tietty muusikko on soittanut? (Tämä siis tietenkin käyttäjän CD-kokoelman näkökulmasta – Wikipedia erikseen...)*/
-```
+Missä yhtyeissä tietty muusikko on soittanut? (Tämä siis tietenkin käyttäjän CD-kokoelman näkökulmasta – Wikipedia erikseen...)*/
 ```
 var musician = db.musician.findOne({"fname": "Tyler", "lname": "Carter"});
 db.band.find(
@@ -133,9 +125,7 @@ db.band.find(
 { "name" : "Issues" }
 { "name" : "Tyler Carter" }
 ```
-```
-/*Millä levyillä tietty laulu on? (Voi olla esim. eri yhtyeiden esittämänä tai saman yhtyeen erilevyillä.)*/
-```
+Millä levyillä tietty laulu on? (Voi olla esim. eri yhtyeiden esittämänä tai saman yhtyeen erilevyillä.)*/
 ```
 db.release.find(
         {
@@ -150,9 +140,7 @@ db.release.find(
 { "title" : "Get What You Give" }
 { "title" : "Prism" }
 ```
-```
-/*Levyjä pitää voida lajitella genren, julkaisuajan ja käyttäjän lisäämien tägien mukaan.*/
-```
+Levyjä pitää voida lajitella genren, julkaisuajan ja käyttäjän lisäämien tägien mukaan.*/
 ```
 /* Get all metalcore releases */
 db.release.find(
@@ -193,9 +181,7 @@ db.release.find(
 { "title" : "Get What You Give" }
 { "title" : "Rescue & Restore" }
 ```
-```
-/*Yksittäisiä lauluja pitää myös voida lajitella genren, julkaisuajan ja käyttäjän lisäämien tägien mukaan.*/
-```
+Yksittäisiä lauluja pitää myös voida lajitella genren, julkaisuajan ja käyttäjän lisäämien tägien mukaan.*/
 ```
 /* Get all songs that are labeled as pop */
 db.release.aggregate(
@@ -280,9 +266,7 @@ db.release.aggregate(
 { "tracks" : { "title" : "Roar" } }
 { "tracks" : { "title" : "Dark Horse" } }
 ```
-```
-/*Lisäksi käyttäjä haluaa voida lisätä sekä lauluihin että levyihin tähtiarvioita (1-5 tähteä) ja lajitella niitä näiden mukaan.*/
-```
+Lisäksi käyttäjä haluaa voida lisätä sekä lauluihin että levyihin tähtiarvioita (1-5 tähteä) ja lajitella niitä näiden mukaan.*/
 ```
 /* Get releases with 4 or more stars */
 db.release.find(
